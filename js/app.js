@@ -27,6 +27,9 @@ localStorage.setItem('cart',tempString);
 Cart.prototype.removeItem = function (item) {
   // TODO: Fill in this instance method to remove one item from the cart.
   // Note: You will have to decide what kind of parameter to pass in here!
+
+  // we got stuck here!!!
+  this.items.splice(item, -1);
 };
 
 const CartItem = function (product, quantity) {
